@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+   
+    
+    <title>Seeker</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">Seeker</a>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="article.html">Articles</a>
+                <a href="bookindex.html">Books</a>
+                <a href="Quotes.html">Quotes</a>
+                <a href="Movies.html">Movies</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+
+
+
+
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <video class="video-slide active" src="d.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="2.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="3.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="4.mp4" autoplay muted loop></video>
+        <video class="video-slide" src="5.mp4" autoplay muted loop></video>
+
+        <div class="content active">
+            <h3>Seek <br> And <br> You Shall Find.</h3>
+            <p><h4><pre class="epre">consciously live as meaningful 
+a life as possible, to place a great 
+value on the journey. 
+and not just the destination,
+while knowing that "meaningful" doesn't always mean "enjoyable".
+"Meaningful" should be equated with "fulfilling."</h4></pre></p>
+        <a href="bookindex.html">Explore More</a>
+        </div>
+
+        <div class="content">
+            <h3>Know <br> Your Inerself <br> And Find the meaning of yours. </h3>
+            <p><h4><pre class="epre">“Meditation is a way for nourishing and blossoming the divinity within you.”
+Yoga is not a religion. It is a science, science of well-being, science of youthfulness, 
+science of integrating body, mind and soul. Exercises are like prose, whereas yoga 
+is the poetry of movements. Once you understand the grammar of yoga; you can write your poetry of movements.”</h4></pre></p>
+        <a href="article.html">Explore More</a>
+        </div>
+
+
+        <div class="content">
+            <h3>look<br> around you <br> everything is fleeting.</h3>
+            <p><h4><pre class="epre">Life is made up of a collection of moments that are not ours to keep. The pain we encounter throughout our days
+ spent on this earth, comes from the illusion that some moments can be held onto. Clinging to people 
+ and experiences that were never ours in the first place is what causes us to miss out on the beauty of the miracle that is the now. 
+ All of this is yours, yet none of it is. How could it be? Look around you. Everything is fleeting.</h4></pre></p>
+        <a href="Quotes.html">Explore More</a>
+        </div>
+
+
+        <div class="content">
+            <h3>Miracles <br> if the don't <br>Find you, be the one.</h3>
+            <p><h4><pre class="epre"> life itself is the biggest miracle, and your being alive and healthy is none less than a miracle, 
+put your all effort in what you love and you can change the people you choose to be around. 
+Life is too short to waste your time on people who don’t respect, appreciate, and value you. 
+Spend your life with people who make you smile,laugh, and feel loved.
+</h4></pre></p>
+        <a href="bookindex.html">Explore More</a>
+        </div>
+
+        <div class="content">
+            <h3> off the road <br> and see the unseen <br> colors of life. </h3>
+            <p><h4><pre class="epre">Life should not be a journey to the grave with the intention of arriving safely in a 
+pretty and well preserved body, but rather to skid in broadside in a cloud of smoke, 
+thoroughly used up, totally worn out, and loudly proclaiming "Wow! What a Ride!</h4></pre></p>
+        <a href="Quotes.html">Explore More</a>
+        </div>
+
+
+        <div class="media-icons">
+            <a href="https://www.facebook.com/highexistence/" target="_blank" ><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/positivelypresent/"target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/thinkproductive?lang=en" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+         <div class="nav-btn active"></div>
+         <div class="nav-btn "></div>  
+         <div class="nav-btn "></div>  
+         <div class="nav-btn "></div>  
+         <div class="nav-btn "></div> 
+         </div>    
+    
+
+
+
+    </section>
+
+    <script type="text/javascript">
+
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slide");
+        const contents = document.querySelectorAll(".content");
+    
+    
+        var sliderNav = function(index){
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+        });
+
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+        contents.forEach((content) => {
+            content.classList.remove("active");
+        });
+
+
+        
+
+            btns[index].classList.add("active");
+            slides[index].classList.add("active");
+            contents[index].classList.add("active");
+
+        }
+    
+        btns.forEach((btn,  i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i);
+    
+            })
+        
+        })
+    </script>
+    
+    
+</body>
+</html>
